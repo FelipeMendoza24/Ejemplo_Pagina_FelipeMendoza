@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> <!-- Caracteres latinos !-->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title> Mi Blog de Presentación Personal</title>
+	</head>
+	<body>
+		<div class="titulo">
+		<h1> Felipe Alejandro Mendoza Navarrete </h1>
+		<button class="Button button1" onclick="accion1()" id="Bt4"> Click de bienvenida </button>
+		</div>
+		<br><br><br><br><br><br><br><br><br>
+		<div class="cuadricula">
+			<div class="secciones actualidad"> <!-- La primera es la clase general y la segunda la clase especifica !-->
+				<div class="titulos actualidad">
+					<h2> Mi actualidad: </h2>
+				</div>
+				<div class="textos a">
+					<p> Actualmente soy un estudiante de 7mo semestre en la universidad de La Sabana, estoy haciendo doble carrera entre ingeniería mecánica e ingeniería informática, disfruto aprender cosas nuevas, ver la formula 1 y pasar tiempo con las personas que quiero. Actualmente se 3 idiomas de programación, Java, Python y Matlab, pero espero en un futuro aprender varios más, en especial C, pues en <a target="_blank" href="https://www.tiobe.com/tiobe-index/"> la página recomendada</a> por el profesor, se puede apreciar su importancia. Actualmente considero crucial ayudar a las demás personas, es por esto que acudo al servicio social de la universidad y también formo parte del grupo de inducciones de la facultad. </p>
+				</div>
+				<br>
+				<h3>
+					Mi canción preferida ahora:
+				</h3>
+				<div class="Img img1">
+					<iframe width="400" height="200" src="https://www.youtube.com/embed/A_g3lMcWVy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="secciones pasado">
+				<div class="titulos pasado">
+					<h2> Mi pasado: </h2>
+				</div>
+				<div class="textos p">
+					<p>
+						Desde pequeño me ha gustado el deporte, especialmente el futbol, que practiqué de forma intensiva hasta los 18 años. Desde los 4 años asistí al Colegio San Jorge de Inglaterra, colegio del cual estoy sumamente agradecido, pues más que aprender académicamente, aprendí a través de los valores a ser mejor persona. Ahí terminé mis estudios de bachillerato y al momento de salir estaba seguro de estudiar ingeniería mecánica (carrera que me entusiasma estudiar, pero en la cual no me veo ejerciendo), pero en el segundo semestre de universidad, gracias a la clase de introducción a la programación, encontré mi verdadera pasión para mi vida laboral, la informática.
+					</p>
+				</div>
+				<br>
+				<h3>
+					Mi canción preferida antes:
+				</h3>
+				<div class="Img img2">
+					<iframe width="400" height="200" src="https://www.youtube.com/embed/3mNdJGjfzc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="secciones futuro">
+				<div class="titulos futuro">
+					<h2> Mi Futuro: </h2>
+				</div>
+				<div class="textos f">
+					<p>
+						El objetivo profesional que quiero diseñar para el largo plazo es realizar mi propio negocio, idealmente en el sector de bienes raíces y en paralelo tener un alto cargo en una compañía de tecnología. Esto lo lograré finalizando de la mejor manera mis dos carreras, luego de esto considero muy necesario aprender técnicas y habilidades nuevas, como networking, hablar fluido en público, especializarme en algún lenguaje de programación, entre otras, pues tendré que invertir en mi conocimiento. Me gustaría ahondar más en finanzas personales, pues las considero muy valiosas para lograr el objetivo a largo plazo de éxito económico. Finalmente, desearía desarrollar una sólida red de contactos, pues de esta manera se abrirán más puertas, ya sea al aprendizaje o laborales.
+					</p>
+				</div>
+				<h3>
+					Carro que me gustaría tener en el futuro:
+				</h3>
+				<div class="Img img3">
+					<img src="Raptor.jpeg" width="400" height="200" align="center">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="botonPrincipal">
+			<a target="_blank" href="LineaDeVida.png"> <button class="Button button3"> Imagen en la que se basó esta página </button> </a>
+		</div>
+		<br>
+		<div class="Calificador">
+			<div class="tituloC">
+				<h2> La persona que ingreso a esta página se llama:</h2>
+			</div>
+			<div class="información">
+				Primer nombre: <input type="text" name="Recibir texto 1" id="Tx_1">	
+
+				Segundo nombre: <input type="text" name="Recibir texto 2" id="Tx_2"> <Br>
+
+				Primer apellido: <input type="text" name="Recibir texto 3" id="Tx_3"> 
+
+				Segundo apellido: <input type="text" name="Recibir texto 4" id="Tx_4"> 
+			</div>
+			<Br>
+			<button class="Button button2" onclick="accion2()" id="Bt4"> Enviar </button> <br>
+			<h3>El nombre ingresado es: </h3>
+			<h4 style="color: darkred;"> &nbsp;<output id="Out1"> </output> </h4>
+			
+		</div>
+	</body>
+	<style type="text/css">
+		.cuadricula{
+				display: grid;
+				grid-template-columns: repeat(3, 2fr); /* para que repita la distancia */
+				grid-column-gap: 50px;
+			}
+		.actualidad{grid-area: 1/2;} /* Posición */
+		.pasado{grid-area: 1/1;} /* Posición */
+		.futuro{grid-area: 1/3;} /* Posición */
+
+		body{ 
+			background-image: url(Fondo.jpeg);
+		}
+		.titulo {
+  			border: 5px outset rgb(22, 75, 181);
+			background-color: lightblue;    
+			text-align: center;
+		}
+		.secciones{
+			border: 2px outset rgb(22, 75, 181);
+			text-align: justify;
+			background-color: lightblue; 
+		}
+		.titulos{
+			text-align: center;
+		}
+		.textos{
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+		.Calificador{
+  			border: 5px outset rgb(22, 75, 181);
+			background-color: lightblue;    
+			text-align: center;
+		}
+		.Button {
+			border: none;
+		  	color: white;
+			padding: 15px 32px;
+			text-align: center;
+			font-size: 20px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.button1{
+			background-color: rgb(22, 75, 181);
+		}
+		.button2{
+			background-color: rgb(22, 75, 181);
+		}
+		.botonPrincipal{
+			text-align: center;
+		}
+		.button3{
+			background-color: rgb(22, 75, 181);
+			text-align: center;
+			border: 5px outset rgb(5, 7, 109);
+			font-size: 30px;
+		}
+		.Img{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function accion1(){
+			confirm("¡Bienvenido a mi blog personal!")
+		}
+		function accion2(){
+				var nombreCompleto= document.getElementById("Tx_1").value+" "+
+									document.getElementById("Tx_2").value+" "+
+									document.getElementById("Tx_3").value+" "+
+									document.getElementById("Tx_4").value
+				alert(nombreCompleto)
+				document.getElementById("Out1").innerHTML=nombreCompleto
+			}
+	</script>
+</html>
